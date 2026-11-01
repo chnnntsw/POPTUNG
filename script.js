@@ -54,8 +54,9 @@ window.onload = function(){
     }
 
     // Mouse
-    document.addEventListener('mousedown', pop);
-    document.addEventListener('mouseup', unpop);
+    document.addEventListener('pointerdown', pop);
+    document.addEventListener('pointerup', unpop);
+    document.addEventListener('pointercancel', unpop);
 
     // Keyboard
     document.addEventListener('keydown', function(event){
